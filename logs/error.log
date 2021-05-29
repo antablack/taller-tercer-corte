@@ -31701,3 +31701,180 @@ Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/72
 Client IP: 172.22.0.1
 
 
+2021-05-29 21:12:47 Error: [Cake\Database\Exception\MissingConnectionException] Connection to Mysql could not be established: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Host desconocido.  in C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Database\Driver.php on line 140
+Exception Attributes: array (
+  'driver' => 'Mysql',
+  'reason' => 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Host desconocido. ',
+)
+Stack Trace:
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:178
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Database\Schema\SchemaDialect.php:47
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:230
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:53
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Database\Connection.php:399
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\ORM\Table.php:512
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\ORM\Query.php:290
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\ORM\Query.php:184
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\ORM\Table.php:1703
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\ORM\Table.php:1264
+- C:\xampp\htdocs\taller-tercer-corte\src\Controller\TallerController.php:14
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Controller\Controller.php:531
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:149
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\BaseApplication.php:313
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:169
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\taller-tercer-corte\webroot\index.php:40
+
+Caused by: [PDOException] SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Host desconocido.  in C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Database\Driver.php on line 132
+Stack Trace:
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Database\Driver.php:132
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:70
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Database\Driver.php:138
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:178
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Database\Schema\SchemaDialect.php:47
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:230
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:53
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Database\Connection.php:399
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\ORM\Table.php:512
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\ORM\Query.php:290
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\ORM\Query.php:184
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\ORM\Table.php:1703
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\ORM\Table.php:1264
+- C:\xampp\htdocs\taller-tercer-corte\src\Controller\TallerController.php:14
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Controller\Controller.php:531
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:149
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\BaseApplication.php:313
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:169
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\taller-tercer-corte\webroot\index.php:40
+
+Caused by: [PDOException] PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Host desconocido.  in C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Database\Driver.php on line 132
+Stack Trace:
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Database\Driver.php:132
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:70
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Database\Driver.php:138
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:178
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Database\Schema\SchemaDialect.php:47
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php:230
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:53
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Database\Connection.php:399
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\ORM\Table.php:512
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\ORM\Query.php:290
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\ORM\Query.php:184
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\ORM\Table.php:1703
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\ORM\Table.php:1264
+- C:\xampp\htdocs\taller-tercer-corte\src\Controller\TallerController.php:14
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Controller\Controller.php:531
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:149
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\BaseApplication.php:313
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:169
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\taller-tercer-corte\webroot\index.php:40
+
+Request URL: /taller
+Referer URL: http://localhost/taller-tercer-corte/
+
+
+2021-05-29 21:21:30 Error: [Cake\Http\Exception\MissingControllerException] Controller class Index.php could not be found. in C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 226
+Exception Attributes: array (
+  'class' => 'Index.php',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:211
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:63
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\BaseApplication.php:311
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:169
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\taller-tercer-corte\webroot\index.php:40
+
+Request URL: /index.php/taller
+Referer URL: http://localhost/taller-tercer-corte/index.php/taller?vehiculo=9
+
+
+2021-05-29 21:21:37 Error: [Cake\Http\Exception\MissingControllerException] Controller class Index.php could not be found. in C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 226
+Exception Attributes: array (
+  'class' => 'Index.php',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:211
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:63
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\BaseApplication.php:311
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:169
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:161
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:126
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- C:\xampp\htdocs\taller-tercer-corte\vendor\cakephp\cakephp\src\Http\Server.php:90
+- C:\xampp\htdocs\taller-tercer-corte\webroot\index.php:40
+
+Request URL: /index.php/taller
+Referer URL: http://localhost/taller-tercer-corte/index.php/taller?vehiculo=9
+
+
