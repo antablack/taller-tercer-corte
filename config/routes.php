@@ -59,6 +59,8 @@ $routes->scope('/', function (RouteBuilder $builder) {
 
     $builder->connect('/taller', ['controller' => 'Taller', 'action' => 'display']);
 
+
+
     /*
      * Connect catchall routes for all controllers.
      *
