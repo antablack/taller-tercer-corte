@@ -1,5 +1,9 @@
 <?php
 
+
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -28,17 +32,17 @@
             <form method="GET" class="row">
                 <div class="col-md-6">
                     <label for="cliente" class="form-label"><h4>Vehículos</h4> </label>
-                    <select class="form-control form-select" id="cliente" name="cliente">
-
+                    <select class="form-control form-select" id="vehiculo" name="vehiculo">
+                        <option <?php echo $vehiculoId=="" ? "selected" : "" ?> value="">----Selecciona un vehiculo----</option>
                         <?php
                             foreach ($vehiculos as $vehiculo) {
-                                echo "<option value=".$vehiculo['id']." ". ($vehiculo['id']== 1 ? "selected" : "") ." >".$vehiculo['placa']."</option>";
+                                echo "<option value=".$vehiculo['id']." ". ($vehiculo['id']== $vehiculoId ? "selected" : "") ." >".$vehiculo['placa']."</option>";
                             }
                         ?>
                     </select>
                 </div>
                 <div class="col-md-3" style="align-self: flex-end;">
-                    <input class="btn btn-success mt-2" type="submit" value="Consultar" />
+                    <input class="btn btn-success mt-2" type="submit" value="Buscar" />
                 </div>
 
             </form>
@@ -47,29 +51,32 @@
     </div>
     <br />
 
+<?php
+    if ($vehiculoId != "" && $vehiculoInfo != null) {
+?>
     <h3>
-Vehículo: Id: <?= $name?>, Placa: PKQ-721
-</h3>
+        Vehículo: Id: <?= $vehiculoInfo["id"]?>, Placa: <?= $vehiculoInfo["placa"]?>
+    </h3>
     <table class="table table-hover">
 
         <tr>
-            <td></td>
-            <td></td>
+            <td width="100">ID</td>
+            <td><?= $clienteInfo["id"]?> </td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
+            <td>Nombre:</td>
+            <td><?= $clienteInfo["name"] . " " . $clienteInfo["apellidos"]  ?> </td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
+            <td>Teléfono:</td>
+            <td><?= $clienteInfo["telefono"]?> </td>
         </tr>
 
     </table>
 
-<h3>
-Reparaciones
-</h3>
+    <h3>
+        Reparaciones
+    </h3>
     <table class="table table-hover">
         <thead class="thead-dark">
             <tr>
@@ -82,10 +89,23 @@ Reparaciones
 
         <tbody>
 
+        <?php foreach ($reparacionesInfo as $reparacion) { ?>
+            <tr>
+                <td><?= $reparacion["id"]?></td>
+                <td><?= $reparacion["fecha"]?></td>
+                <td><?= $reparacion["observacion"]?></td>
+                <td>$<?= $reparacion["costo"]?></td>
+            </tr>
+        <?php
+        }?>
+
+
         </tbody>
 
     </table>
-
+    <?php
+   }
+?>
 </body>
 
 </html>

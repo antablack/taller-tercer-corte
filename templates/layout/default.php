@@ -65,7 +65,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="taller">Taller</a>
                     </div>
-                    
+
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Reportes</a>
