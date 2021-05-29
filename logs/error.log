@@ -10570,3 +10570,1452 @@ Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/da
 Client IP: 172.22.0.1
 
 
+2021-05-29 19:01:39 Error: [Cake\Database\Exception\MissingConnectionException] Connection to Mysql could not be established: SQLSTATE[HY000] [2002] No such file or directory in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Database/Driver.php on line 140
+Exception Attributes: array (
+  'driver' => 'Mysql',
+  'reason' => 'SQLSTATE[HY000] [2002] No such file or directory',
+)
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php:178
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Database/Schema/SchemaDialect.php:47
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php:230
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:53
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Database/Connection.php:399
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:512
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Query.php:290
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Query.php:184
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1703
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1264
+- /var/www/html/taller-tercer-corte/src/Controller/TallerController.php:12
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Caused by: [PDOException] SQLSTATE[HY000] [2002] No such file or directory in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Database/Driver.php on line 132
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Database/Driver.php:132
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:70
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Database/Driver.php:138
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php:178
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Database/Schema/SchemaDialect.php:47
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php:230
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:53
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Database/Connection.php:399
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:512
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Query.php:290
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Query.php:184
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1703
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1264
+- /var/www/html/taller-tercer-corte/src/Controller/TallerController.php:12
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /taller
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:01:41 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/img/cake.icon.png
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/f7045809-b542-4e8b-9a55-f44022e0801b
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:01:41 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/css/toolbar.css
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/f7045809-b542-4e8b-9a55-f44022e0801b
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:01:41 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/css/reset.css
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/f7045809-b542-4e8b-9a55-f44022e0801b
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:01:41 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/js/toolbar-app.js
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/f7045809-b542-4e8b-9a55-f44022e0801b
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:01:41 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/js/jquery.js
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/f7045809-b542-4e8b-9a55-f44022e0801b
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:01:41 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/js/debug_kit.js
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/f7045809-b542-4e8b-9a55-f44022e0801b
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:01:42 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/js/toolbar-app.js
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/f7045809-b542-4e8b-9a55-f44022e0801b
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:01:42 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/js/debug_kit.js
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/f7045809-b542-4e8b-9a55-f44022e0801b
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:01:43 Error: [Cake\Http\Exception\MissingControllerException] Controller class Favicon.ico could not be found. in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 226
+Exception Attributes: array (
+  'class' => 'Favicon.ico',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:211
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:63
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:311
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /favicon.ico
+Referer URL: http://localhost/taller-tercer-corte/index.php/taller
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:33:52 Error: [Cake\Database\Exception\MissingConnectionException] Connection to Mysql could not be established: SQLSTATE[HY000] [2002] No such file or directory in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Database/Driver.php on line 140
+Exception Attributes: array (
+  'driver' => 'Mysql',
+  'reason' => 'SQLSTATE[HY000] [2002] No such file or directory',
+)
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php:178
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Database/Schema/SchemaDialect.php:47
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php:230
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:53
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Database/Connection.php:399
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:512
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Query.php:290
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Query.php:184
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1703
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1264
+- /var/www/html/taller-tercer-corte/src/Controller/TallerController.php:12
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Caused by: [PDOException] SQLSTATE[HY000] [2002] No such file or directory in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Database/Driver.php on line 132
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Database/Driver.php:132
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:70
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Database/Driver.php:138
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php:178
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Database/Schema/SchemaDialect.php:47
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php:230
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:53
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Database/Connection.php:399
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:512
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Query.php:290
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Query.php:184
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1703
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1264
+- /var/www/html/taller-tercer-corte/src/Controller/TallerController.php:12
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /taller
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:33:54 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/img/cake.icon.png
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/1dd490e7-bba9-4918-bd0c-46758f97ea14
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:33:54 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/css/toolbar.css
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/1dd490e7-bba9-4918-bd0c-46758f97ea14
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:33:54 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/css/reset.css
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/1dd490e7-bba9-4918-bd0c-46758f97ea14
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:33:54 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/js/toolbar-app.js
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/1dd490e7-bba9-4918-bd0c-46758f97ea14
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:33:54 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/js/jquery.js
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/1dd490e7-bba9-4918-bd0c-46758f97ea14
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:33:55 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/js/debug_kit.js
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/1dd490e7-bba9-4918-bd0c-46758f97ea14
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:33:55 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/js/toolbar-app.js
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/1dd490e7-bba9-4918-bd0c-46758f97ea14
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:33:56 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/js/debug_kit.js
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/1dd490e7-bba9-4918-bd0c-46758f97ea14
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:36:02 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 226
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:65
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:311
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /css/milligram.min.css
+Referer URL: http://localhost/taller-tercer-corte/index.php/taller
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:36:02 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 226
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:65
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:311
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /css/normalize.min.css
+Referer URL: http://localhost/taller-tercer-corte/index.php/taller
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:36:02 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 226
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:65
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:311
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /css/cake.css
+Referer URL: http://localhost/taller-tercer-corte/index.php/taller
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:36:04 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/css/toolbar.css
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/b86db97a-812d-4253-96b8-92e1d78b98b9
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:36:04 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/js/jquery.js
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/b86db97a-812d-4253-96b8-92e1d78b98b9
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:36:04 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/img/cake.icon.png
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/b86db97a-812d-4253-96b8-92e1d78b98b9
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:36:04 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/css/reset.css
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/b86db97a-812d-4253-96b8-92e1d78b98b9
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:36:04 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/js/toolbar-app.js
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/b86db97a-812d-4253-96b8-92e1d78b98b9
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:36:04 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/js/debug_kit.js
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/b86db97a-812d-4253-96b8-92e1d78b98b9
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:36:05 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/js/toolbar-app.js
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/b86db97a-812d-4253-96b8-92e1d78b98b9
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:36:05 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/js/debug_kit.js
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/b86db97a-812d-4253-96b8-92e1d78b98b9
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:37:36 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 226
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:65
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:311
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /css/milligram.min.css
+Referer URL: http://localhost/taller-tercer-corte/index.php/taller
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:37:36 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 226
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:65
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:311
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /css/normalize.min.css
+Referer URL: http://localhost/taller-tercer-corte/index.php/taller
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:37:36 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 226
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:65
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:311
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /css/cake.css
+Referer URL: http://localhost/taller-tercer-corte/index.php/taller
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:38:09 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 226
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:65
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:311
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /css/normalize.min.css
+Referer URL: http://localhost/taller-tercer-corte/index.php/taller
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:38:09 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 226
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:65
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:311
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /css/cake.css
+Referer URL: http://localhost/taller-tercer-corte/index.php/taller
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:38:09 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 226
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:65
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:311
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /css/milligram.min.css
+Referer URL: http://localhost/taller-tercer-corte/index.php/taller
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:38:11 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/css/toolbar.css
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/92913a5f-dd9f-40c7-8788-67d02abecc4c
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:38:11 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/js/toolbar-app.js
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/92913a5f-dd9f-40c7-8788-67d02abecc4c
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:38:11 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/js/debug_kit.js
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/92913a5f-dd9f-40c7-8788-67d02abecc4c
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:38:11 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/css/reset.css
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/92913a5f-dd9f-40c7-8788-67d02abecc4c
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:38:11 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/js/jquery.js
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/92913a5f-dd9f-40c7-8788-67d02abecc4c
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:38:12 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/img/cake.icon.png
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/92913a5f-dd9f-40c7-8788-67d02abecc4c
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:38:12 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/js/toolbar-app.js
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/92913a5f-dd9f-40c7-8788-67d02abecc4c
+Client IP: 172.22.0.1
+
+
+2021-05-29 19:38:13 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "requests" in /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php on line 514
+Stack Trace:
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/ORM/Table.php:1545
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Controller/RequestsController.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/Controller.php:531
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:149
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/BaseApplication.php:313
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/www/html/taller-tercer-corte/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/www/html/taller-tercer-corte/webroot/index.php:40
+- /var/www/html/taller-tercer-corte/index.php:16
+
+Request URL: /debug-kit/toolbar/debug_kit/js/debug_kit.js
+Referer URL: http://localhost/taller-tercer-corte/index.php/debug-kit/toolbar/92913a5f-dd9f-40c7-8788-67d02abecc4c
+Client IP: 172.22.0.1
+
+
