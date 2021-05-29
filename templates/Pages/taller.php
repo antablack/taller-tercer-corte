@@ -27,6 +27,7 @@
 </head>
 
 <body>
+<h3> Elaborado por: Kennedy Gamarra y Juan Carlos Sanchez </h3>
     <div class="row">
         <div class="col-md-8">
             <form method="GET" class="row">
